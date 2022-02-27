@@ -49,7 +49,7 @@ uint64_t sumPrime(uint64_t hbound) {
   }
   for (int i=2; i < hbound; ++i) {
     if (a[i]) {
-      sum = sum + a[i]:
+      sum = sum + a[i];
     }
   }
   return sum;
