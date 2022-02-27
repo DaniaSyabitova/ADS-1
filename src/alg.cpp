@@ -39,17 +39,17 @@ uint64_t nextPrime(uint64_t value) {
 uint64_t sumPrime(uint64_t hbound) {
   int sum = 0;
   int *a = new int[hbound+1];
-  for (int i=0; i <= hbound; ++i) 
+  for (int i=0; i <= hbound; ++i)
     a[i] = i;
   for (int i=2; i*i <= hbound; i++) {
     if (a[i]) {
       for (int j=i*i; j <= hbound; j+=i)
-        a[j]=0;
+        a[j] = 0;
     }
   }
   for (int i=2; i < hbound; ++i) {
     if (a[i]) {
-      summ = sum + a[i]:
+      sum = sum + a[i]:
     }
   }
   return sum;
