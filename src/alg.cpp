@@ -20,8 +20,7 @@ uint64_t nPrime(uint64_t n) {
     if (checkPrime(i)) {
       a++;
     }
-  }
-  while (a < n);
+  } while (a < n);
   return i;
 }
 
@@ -38,8 +37,8 @@ uint64_t nextPrime(uint64_t value) {
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-  int summa = 0;
-  int *a = new int [hbound + 1];
+  int sum = 0;
+  int *a = new int[hbound + 1];
   for (int i = 0; i <= hbound; ++i)
     a[i] = i;
   for (int i = 2; (i*i) <= hbound; i++)
@@ -50,8 +49,8 @@ uint64_t sumPrime(uint64_t hbound) {
 }
     for (int i = 2; i < hbound; ++i) {
       if (a[i]) {
-        summa = summa + a[i];
+        sum = sum + a[i];
       }
     }
-    return summa;
+    return sum;
 }
